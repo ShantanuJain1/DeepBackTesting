@@ -16,6 +16,7 @@ def get_ohlc_data():
     return jsonify(json_data)
 
 def read_and_filter_json(start_date, end_date):
+    #https://raw.githubusercontent.com/ShantanuJain1/DeepBackTesting/main/BankNifty_data_2021.json    
     # Read the JSON file into a Python object (e.g., list or dictionary)
     with open('nifty_1min_2015_2022.json', 'r') as file:
         ohlc_data = json.load(file)
